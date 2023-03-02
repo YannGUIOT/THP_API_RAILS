@@ -1,30 +1,9 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+$ sudo service postgresql start
 
-Things you may want to cover:
+$ rails s
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-TESTS :
+# TESTS :
 
 REGISTER : $ curl -XPOST -H "Content-Type: application/json" -d '{ "user": { "email": "test2@example.com", "password": "0123456789" } }' http://localhost:3000/users
 response : {"message":"Signed up successfully.","user":{"id":[id],"email":"test@example.com","created_at":[timestamp],"updated_at":[timestamp]}
